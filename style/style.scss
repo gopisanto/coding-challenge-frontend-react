@@ -1,0 +1,39 @@
+.stolen-bikes {
+  max-width: 70%;
+  width: 70%;
+  margin: 0 auto;
+  vertical-align: middle;
+
+  .header {
+    margin-bottom: 20px;
+
+    .logo, .titles {
+      display: inline-block;
+    }
+
+    .logo {
+      margin-right: 10px;
+      height: 75px;
+      width: 75px;
+    }
+
+    .titles {
+      h3 {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .search-bar {
+    margin-bottom: 50px;
+    * {
+      margin-right: 10px;
+    }
+  }
+
+  .paginated-list {
+    ul {
+      list-style: none;
+    }
+  }
+}
