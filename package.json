@@ -2,7 +2,7 @@
   "name": "join",
   "version": "1.0.0",
   "description": "Join Stolen Bikes App",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server"
