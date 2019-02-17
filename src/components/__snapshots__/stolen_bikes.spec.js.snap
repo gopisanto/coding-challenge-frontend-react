@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StolenBikes /> renders bikes list 1`] = `
+<div
+  className="stolen-bikes"
+>
+  <div
+    className="header"
+  >
+    <img
+      alt="police"
+      className="logo"
+      src="../../screens/police.jpg"
+    />
+    <div
+      className="titles"
+    >
+      <h1>
+        Police Department Of Berlin
+      </h1>
+      <h3>
+        Stolen Bykes
+      </h3>
+    </div>
+  </div>
+  <div
+    className="search-bar"
+  >
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="search case descriptions"
+      type="text"
+      value=""
+    />
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="from"
+      type="date"
+      value=""
+    />
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="to"
+      type="date"
+      value=""
+    />
+    <input
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+      value="Find cases"
+    />
+  </div>
+  <div>
+    No data found
+  </div>
+</div>
+`;
+
+exports[`<StolenBikes /> renders bikes list 2`] = `
+<div
+  className="stolen-bikes"
+>
+  <div
+    className="header"
+  >
+    <img
+      alt="police"
+      className="logo"
+      src="../../screens/police.jpg"
+    />
+    <div
+      className="titles"
+    >
+      <h1>
+        Police Department Of Berlin
+      </h1>
+      <h3>
+        Stolen Bykes
+      </h3>
+    </div>
+  </div>
+  <div
+    className="search-bar"
+  >
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="search case descriptions"
+      type="text"
+      value=""
+    />
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="from"
+      type="date"
+      value=""
+    />
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="to"
+      type="date"
+      value=""
+    />
+    <input
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+      value="Find cases"
+    />
+  </div>
+  <div>
+    No data found
+  </div>
+</div>
+`;
+
+exports[`<StolenBikes /> renders loading screen 1`] = `
+<div
+  className="stolen-bikes"
+>
+  <div
+    className="header"
+  >
+    <img
+      alt="police"
+      className="logo"
+      src="../../screens/police.jpg"
+    />
+    <div
+      className="titles"
+    >
+      <h1>
+        Police Department Of Berlin
+      </h1>
+      <h3>
+        Stolen Bykes
+      </h3>
+    </div>
+  </div>
+  <div
+    className="search-bar"
+  >
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="search case descriptions"
+      type="text"
+      value=""
+    />
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="from"
+      type="date"
+      value=""
+    />
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="to"
+      type="date"
+      value=""
+    />
+    <input
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+      value="Find cases"
+    />
+  </div>
+  <div>
+    No data found
+  </div>
+</div>
+`;
+
+exports[`<StolenBikes /> renders loading screen 2`] = `
+<div
+  className="stolen-bikes"
+>
+  <div
+    className="header"
+  >
+    <img
+      alt="police"
+      className="logo"
+      src="../../screens/police.jpg"
+    />
+    <div
+      className="titles"
+    >
+      <h1>
+        Police Department Of Berlin
+      </h1>
+      <h3>
+        Stolen Bykes
+      </h3>
+    </div>
+  </div>
+  <div
+    className="search-bar"
+  >
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="search case descriptions"
+      type="text"
+      value=""
+    />
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="from"
+      type="date"
+      value=""
+    />
+    <input
+      disabled={true}
+      onChange={[Function]}
+      placeholder="to"
+      type="date"
+      value=""
+    />
+    <input
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+      value="Find cases"
+    />
+  </div>
+  <div>
+    No data found
+  </div>
+</div>
+`;

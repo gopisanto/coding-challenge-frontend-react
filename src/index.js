@@ -4,6 +4,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import thunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 import StolenBikes from './components/stolen_bikes';
 import StolenBikeDetail from './components/stolen_bike_detail';
@@ -13,7 +14,7 @@ import reducer from './reducers';
 import '../style/style.scss';
 
 /* eslint-disable no-underscore-dangle */
-const store = createStore(reducer, applyMiddleware(thunk));
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 /* eslint-enable */
 
 ReactDOM.render(

@@ -1,24 +1,38 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { get, isEmpty } from 'lodash';
-import { Link } from 'react-router-dom';
 
 import PaginatedList from './paginated_list';
+import StolenBike from './stolen_bike';
+import SearchInput from './search_bar';
+import NoData from './no_data';
 
-import { fetchBikes } from '../reducers';
+import { fetchBikes, filterBikeList } from '../reducers';
 
 class StolenBikes extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleFilterChange = this.handleFilterChange.bind(this);
+  }
+
   componentDidMount() {
     this.props.fetchBikes();
   }
 
-  render() {
-    const bikes = get(this.props.bikes, 'bikes.data.incidents');
+  handleFilterChange({ term, startDate, endDate }) {
+    this.props.filterBikeList({ search: term, startDate, endDate });
+  }
 
-    if (isEmpty(bikes) || bikes.length === 0) {
-      return <div>Loading...</div>;
-    }
+  render() {
+    const {
+      loading,
+      bikes,
+      search,
+      startDate,
+      endDate,
+      error,
+    } = this.props;
 
     return (
       <div className="stolen-bikes">
@@ -29,14 +43,20 @@ class StolenBikes extends Component {
             <h3>Stolen Bykes</h3>
           </div>
         </div>
-        <div className="search-bar">
-          <input type="text" placeholder="search case descriptions" />
-          <input type="date" placeholder="from" />
-          <input type="date" placeholder="to" />
-          <input type="button" value="Find cases" />
-        </div>
-        <PaginatedList bikes={bikes} />
-        <Link to="/incident/2">Click me</Link>
+        <SearchInput
+          onFilterChange={this.handleFilterChange}
+          search={search}
+          startDate={startDate}
+          endDate={endDate}
+          searchDisabled={(bikes.length === 0 || loading) && !error}
+        />
+        { error && <p className="error">{error}</p>}
+        { !error && loading && <div>Loading...</div> }
+        {
+          bikes && bikes.length === 0
+            ? !error && !loading && <NoData />
+            : !error && !loading && <PaginatedList data={bikes} itemRenderer={StolenBike} />
+        }
       </div>
     );
   }
@@ -45,13 +65,31 @@ class StolenBikes extends Component {
 StolenBikes.propTypes = {
   bikes: PropTypes.array,
   fetchBikes: PropTypes.func.isRequired,
+  filterBikeList: PropTypes.func.isRequired,
+  loading: PropTypes.bool,
+  search: PropTypes.string,
+  startDate: PropTypes.string,
+  endDate: PropTypes.string,
+  error: PropTypes.string,
 };
 
 StolenBikes.defaultProps = {
   bikes: [],
+  loading: false,
+  search: '',
+  startDate: '',
+  endDate: '',
+  error: null,
 };
 
 export default connect(
-  state => ({ bikes: state.bikes }),
-  { fetchBikes },
+  state => ({
+    bikes: state.bikes.filteredBikes,
+    loading: state.bikes.loading,
+    search: state.bikes.search,
+    startDate: state.bikes.startDate,
+    endDate: state.bikes.endDate,
+    error: state.bikes.error,
+  }),
+  { fetchBikes, filterBikeList },
 )(StolenBikes);
