@@ -1,0 +1,54 @@
+.stolen-bikes {
+  max-width: 70%;
+  width: 70%;
+  margin: 0 auto;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .stolen-bikes .header {
+    margin-bottom: 20px; }
+    .stolen-bikes .header .logo, .stolen-bikes .header .titles {
+      display: inline-block; }
+    .stolen-bikes .header .logo {
+      margin-right: 10px;
+      height: 75px;
+      width: 75px; }
+    .stolen-bikes .header .titles h3 {
+      font-weight: normal; }
+  .stolen-bikes .search-bar {
+    margin-bottom: 50px; }
+    .stolen-bikes .search-bar * {
+      margin-right: 10px; }
+  .stolen-bikes .paginated-list ul {
+    list-style: none;
+    padding-left: 0px; }
+
+.stolen-bike-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px; }
+  .stolen-bike-detail img {
+    width: 15%;
+    margin-right: 5%; }
+  .stolen-bike-detail .description {
+    width: 80%; }
+    .stolen-bike-detail .description .time-location {
+      display: flex;
+      flex-wrap: wrap; }
+      .stolen-bike-detail .description .time-location label {
+        width: 50%;
+        line-height: 1.5; }
+
+.page-links {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .page-links * {
+    margin-right: 5px; }
+
+.error {
+  color: red; }
