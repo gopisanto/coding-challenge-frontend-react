@@ -10,7 +10,7 @@ exports[`<StolenBikes /> renders bikes list 1`] = `
     <img
       alt="police"
       className="logo"
-      src="../../screens/police.jpg"
+      src="police.jpg"
     />
     <div
       className="titles"
@@ -27,21 +27,18 @@ exports[`<StolenBikes /> renders bikes list 1`] = `
     className="search-bar"
   >
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="search case descriptions"
       type="text"
       value=""
     />
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="from"
       type="date"
       value=""
     />
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="to"
       type="date"
@@ -70,7 +67,7 @@ exports[`<StolenBikes /> renders bikes list 2`] = `
     <img
       alt="police"
       className="logo"
-      src="../../screens/police.jpg"
+      src="police.jpg"
     />
     <div
       className="titles"
@@ -87,21 +84,18 @@ exports[`<StolenBikes /> renders bikes list 2`] = `
     className="search-bar"
   >
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="search case descriptions"
       type="text"
       value=""
     />
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="from"
       type="date"
       value=""
     />
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="to"
       type="date"
@@ -130,7 +124,7 @@ exports[`<StolenBikes /> renders loading screen 1`] = `
     <img
       alt="police"
       className="logo"
-      src="../../screens/police.jpg"
+      src="police.jpg"
     />
     <div
       className="titles"
@@ -147,21 +141,18 @@ exports[`<StolenBikes /> renders loading screen 1`] = `
     className="search-bar"
   >
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="search case descriptions"
       type="text"
       value=""
     />
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="from"
       type="date"
       value=""
     />
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="to"
       type="date"
@@ -190,7 +181,7 @@ exports[`<StolenBikes /> renders loading screen 2`] = `
     <img
       alt="police"
       className="logo"
-      src="../../screens/police.jpg"
+      src="police.jpg"
     />
     <div
       className="titles"
@@ -207,21 +198,18 @@ exports[`<StolenBikes /> renders loading screen 2`] = `
     className="search-bar"
   >
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="search case descriptions"
       type="text"
       value=""
     />
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="from"
       type="date"
       value=""
     />
     <input
-      disabled={true}
       onChange={[Function]}
       placeholder="to"
       type="date"

@@ -48,7 +48,6 @@ class StolenBikes extends Component {
           search={search}
           startDate={startDate}
           endDate={endDate}
-          searchDisabled={(bikes.length === 0 || loading) && !error}
         />
         { error && <p className="error">{error}</p>}
         { !error && loading && <div>Loading...</div> }

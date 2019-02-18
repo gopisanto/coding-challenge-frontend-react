@@ -34,27 +34,25 @@ const SearchInput = ({
           type="text"
           value={term}
           onChange={handleChange}
-          disabled={searchDisabled}
           placeholder="search case descriptions"
         />
         <input
           type="date"
           onChange={({ target: { value } }) => setStartDate(value)}
           value={startDate}
-          disabled={searchDisabled}
           placeholder="from"
         />
         <input
           type="date"
           value={endDate}
           onChange={({ target: { value } }) => setEndDate(value)}
-          disabled={searchDisabled}
           placeholder="to"
         />
         <input
           type="button"
           onClick={handleSearchClick}
           value="Find cases"
+          disabled={isEmpty(term) && isEmpty(startDate) && isEmpty(endDate)}
         />
       </div>
       { error && <div className="error">{error}</div> }
@@ -67,14 +65,12 @@ SearchInput.propTypes = {
   search: PropTypes.string,
   startDate: PropTypes.string,
   endDate: PropTypes.string,
-  searchDisabled: PropTypes.bool,
 };
 
 SearchInput.defaultProps = {
   search: '',
   startDate: '',
   endDate: '',
-  searchDisabled: false,
 };
 
 export default SearchInput;
