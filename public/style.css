@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  vertical-align: middle; }
+  justify-content: center; }
   .header .logo, .header .titles {
     display: inline-block; }
   .header .logo {
@@ -52,10 +52,9 @@
   width: 70%;
   margin: 0 auto; }
   .stolen-bike-details .map-container {
-    height: 300px;
-    width: 300px;
-    max-width: 300px;
-    max-height: 300px; }
+    position: relative;
+    height: 400px;
+    width: 100%; }
 
 .page-links {
   display: flex;
