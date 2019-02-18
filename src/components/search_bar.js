@@ -55,7 +55,7 @@ const SearchInput = ({
           type="button"
           onClick={handleSearchClick}
           value="Find cases"
-          disabled={searchDisabled || (isEmpty(term) && isEmpty(startDate) && isEmpty(endDate))}
+          disabled={searchDisabled}
         />
       </div>
       { error && <div className="error">{error}</div> }
