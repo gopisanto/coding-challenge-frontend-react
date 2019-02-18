@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { isEmpty } from 'lodash';
 
 const SearchInput = ({
   onFilterChange,
@@ -51,7 +50,6 @@ const SearchInput = ({
           type="button"
           onClick={handleSearchClick}
           value="Find cases"
-          disabled={isEmpty(term) && isEmpty(startDate) && isEmpty(endDate)}
         />
       </div>
       { error && <div className="error">{error}</div> }
