@@ -15,7 +15,7 @@ const StolenBike = ({
   },
   showDetail,
 }) => (
-  <div className="stolen-bike-detail">
+  <div className="stolen-bike">
     <img src={imageURL} alt="title" />
     <div className="description">
       {

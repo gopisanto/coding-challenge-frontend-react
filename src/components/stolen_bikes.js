@@ -6,6 +6,7 @@ import PaginatedList from './paginated_list';
 import StolenBike from './stolen_bike';
 import SearchInput from './search_bar';
 import NoData from './no_data';
+import Header from './header';
 
 import { fetchBikes, filterBikeList } from '../reducers';
 
@@ -36,13 +37,7 @@ class StolenBikes extends Component {
 
     return (
       <div className="stolen-bikes">
-        <div className="header">
-          <img className="logo" alt="police" src="police.jpg" />
-          <div className="titles">
-            <h1>Police Department Of Berlin</h1>
-            <h3>Stolen Bykes</h3>
-          </div>
-        </div>
+        <Header />
         <SearchInput
           onFilterChange={this.handleFilterChange}
           search={search}

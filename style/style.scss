@@ -1,3 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+
+  .logo, .titles {
+    display: inline-block;
+  }
+
+  .logo {
+    margin-right: 10px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .titles {
+    h3 {
+      font-weight: normal;
+    }
+  }
+}
 .stolen-bikes {
   max-width: 70%;
   width: 70%;
@@ -6,26 +28,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  .header {
-    margin-bottom: 20px;
-
-    .logo, .titles {
-      display: inline-block;
-    }
-
-    .logo {
-      margin-right: 10px;
-      height: 75px;
-      width: 75px;
-    }
-
-    .titles {
-      h3 {
-        font-weight: normal;
-      }
-    }
-  }
 
   .search-bar {
     margin-bottom: 50px;
@@ -42,7 +44,7 @@
   }
 }
 
-.stolen-bike-detail {
+.stolen-bike {
   display: flex;
   align-items: flex-start;
   margin-bottom: 15px;
@@ -67,6 +69,18 @@
         line-height: 1.5;
       }
     }
+  }
+}
+
+.stolen-bike-details {
+  max-width: 70%;
+  width: 70%;
+  margin: 0 auto;
+
+  .map-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
   }
 }
 
