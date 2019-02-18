@@ -7,7 +7,6 @@ const SearchInput = ({
   search,
   startDate: initialStartDate,
   endDate: initialEndDate,
-  searchDisabled,
 }) => {
   const [term, setTerm] = useState(search);
   const [startDate, setStartDate] = useState(initialStartDate);
